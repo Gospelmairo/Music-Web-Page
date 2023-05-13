@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changes from Rio</title>
+    <link rel="stylesheet" href="music.css">
+    <title>Document</title>
 </head>
 <body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="/WhatsApp Image 2023-05-10 at 1.04.17 AM.jpeg" class="logo" alt="Media Logo">
+                <ul>
+                    <li><a href="/home.html" target="_blank">HOME</a></li>
+                    <li><a href="/about.html" target="_blank">ABOUT</a></li>
+                    <li><a href="">SPECIFICATION</a></li>
+                    <li><a href="">PRODUCT</a></li>
+                    <li><a href="">CONNECT</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="left-col">
+            <h1>BURNA  <br>BOY <br> SOUND</h1>
+            <div class="right-col">
+                <p>Click here to listen</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnAEKKAcI-fwfR0_vDwthmrpqXOFiMYz4dRw&usqp=CAU" id="icon" alt="">
+            </div>
+        </div>
+    </div>
+
+    <audio id="burna">
+        <source src="/Burna_Boy_Ft_J_Balvin_-_Rollercoaster.mp3">
+    </audio>
+
+    <script>
+        var burna = document.getElementById("burna");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            if (burna.paused) {
+                burna.play();
+                
+            }else{
+                burna.pause();   
+            }  
+        }
+
+        media.addEventListener("click, togglePlayback")
+    </script>
+
+    
     
 </body>
 </html>
